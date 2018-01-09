@@ -1,13 +1,15 @@
 body {
     max-width: 500px;
+    margin: 0 auto;
 }
-
 img {
    max-width: 100%;
 }
-
+.site-header {
+    width: 100%;
+}
  .heading-group-h1 {
-     display: block;
+    display: block;
     float: left;
  }
 .icon-menu {
@@ -16,9 +18,38 @@ img {
     float: right;
     font-size: 30px;
 }
-header li {
+.main-nav {
     display: none;
 }
-@media {
-
+a {
+    font-size: 1.5em;
+    margin-left: 0px;
+}
+.icon-menu:hover + .main-nav {
+    color: blue;
+    display: block;
+}
+main {
+    padding: 5px;
+}
+@media only screen and (min-width: 500px) {
+    body {
+        max-width: 1000px;
+    }
+    .icon-menu {
+        display: none;
+    }
+    .main-nav {
+        display: block;
+    }
+    li {
+        display: inline;
+    }
+    a {
+        margin-left: 10px;
+    }
+    img {
+        max-width: 100%;
+        float: right;
+    }
 }
