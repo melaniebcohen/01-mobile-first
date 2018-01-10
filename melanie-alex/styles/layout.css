@@ -13,7 +13,7 @@ img {
  .heading-group-h1 {
     display: block;
     float: left;
-    padding: 0.5% 0 2.5% 1.5%;
+    padding: 0.5% 0 11px 1.5%;
     width: 80%;
 }
 .icon-menu {
@@ -65,7 +65,7 @@ main {
 }
 @media only screen and (min-width: 500px) {
     body {
-        max-width: 1000px;
+        max-width: 100%;
     }
     .icon-menu {
         display: none;
